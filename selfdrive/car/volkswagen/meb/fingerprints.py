@@ -33,4 +33,4 @@ class CarInterface:
     return ret
 
 CAR = CAR.CUPRA_BORN_21 = "CUPRA BORN 2021"
-MEB_CARS = {CAR.CUPRA_BORN_21}
+MEB_CARS = {CAR.CUPRA_BORN_21} 
