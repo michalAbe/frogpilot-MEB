@@ -130,6 +130,8 @@ class WMI(StrEnum):
   VOLKSWAGEN_EUROPE_SUV = "WVG"
   VOLKSWAGEN_EUROPE_CAR = "WVW"
   VOLKSWAGEN_GROUP_RUS = "XW8"
+  CUPRA_BORN_21 = 1000
+  MEB_CARS = {CAR.CUPRA_BORN_21}
 
 
 class VolkswagenFlags(IntFlag):
@@ -514,3 +516,18 @@ FW_QUERY_CONFIG = FwQueryConfig(
 )
 
 DBC = CAR.create_dbc_map()
+    CAR.CUPRA_BORN_21: {
+    "carFingerprint": "CUPRA BORN 2021",
+    "make": "CUPRA",
+    "model": "Born",
+    "year": 2021,
+    "series": "MEB",
+    "package": "Travel Assist",
+    "minEnableSpeed": -1,
+    "mass": 1900,
+    "wheelbase": 2.765,
+    "steerRatio": 14.8,
+    "enableGasInterceptor": True,
+    "openpilotLongitudinalControl": True,
+    "radarOffCan": True,
+  },
